@@ -6,7 +6,7 @@ import { Repeat } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Icons } from "@/components/icons"
-import { registry } from "@/fancy/index"
+import { registry } from "@/imooui/index"
 
 import { CodeSnippet } from "./code-snippet"
 import { OpenInV0Button } from "./open-in-v0"
@@ -170,7 +170,7 @@ export function ComponentPreview({
                           <OpenInV0Button
                             variant="ghost"
                             className="justify-start  text-left px-0 h-6 gap-1  flex w-full border-none"
-                            url={`https://fancycomponents.dev/r/${name}.json`}
+                            url={`https://imooui.imoogleai.xyz/r/${name}.json`}
                           />
                         </DropdownMenuItem>
                         <DropdownMenuItem>
@@ -187,7 +187,7 @@ export function ComponentPreview({
                     </DropdownMenu>
                   ) : (
                     <OpenInV0Button
-                      url={`https://fancycomponents.dev/r/${name}.json`}
+                      url={`https://imooui.imoogleai.xyz/r/${name}.json`}
                     />
                   )}
                   <RestartButton onRestart={handleRestart} />

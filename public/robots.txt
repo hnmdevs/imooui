@@ -3,4 +3,4 @@ Allow: /
 Allow: /api/og/*
 Disallow: /api
 Disallow: /r/
-Sitemap: https://fancycomponents.dev/sitemap.xml
+Sitemap: https://imooui.imoogleai.xyz/sitemap.xml

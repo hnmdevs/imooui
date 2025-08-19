@@ -4,7 +4,7 @@ const fs = require("fs")
 const path = require("path")
 
 // @ts-ignore
-const baseDir = path.join(__dirname, "..", "fancy")
+const baseDir = path.join(__dirname, "..", "imooui")
 const componentsDir = path.join(baseDir, "components")
 const examplesDir = path.join(baseDir, "examples")
 const hooksDir = path.join(__dirname, "..", "hooks")
@@ -80,9 +80,9 @@ function findHookImports(sourceCode: string): string[] {
 }
 
 function findComponentImports(sourceCode: string): string[] {
-  // Match static imports from @/fancy/components/ or @/fancy/examples/
+  // Match static imports from @/imooui/components/ or @/imooui/examples/
   const componentImportRegex =
-    /import\s+([^'"]+?)\s+from\s+['"]@\/fancy\/(components|examples)\/([^'"]+)['"]/g
+    /import\s+([^'"]+?)\s+from\s+['"]@\/imooui\/(components|examples)\/([^'"]+)['"]/g
   const components: string[] = []
   let match
 
@@ -104,7 +104,7 @@ function findComponentImports(sourceCode: string): string[] {
       .replace(/^-/, "")
 
     if (basePath !== currentComponent) {
-      components.push(`fancy/${basePath}`)
+      components.push(`imooui/${basePath}`)
     }
   }
 
@@ -116,12 +116,12 @@ function findComponentImports(sourceCode: string): string[] {
 }
 
 // ---------------------------------------------------------------------------
-// helper to detect dynamic imports, e.g. dynamic(() => import("@/fancy/..."))
+// helper to detect dynamic imports, e.g. dynamic(() => import("@/imooui/..."))
 function findDynamicComponentImports(sourceCode: string): string[] {
-  // Looks for lines like: dynamic(() => import("@/fancy/components/..."))
-  // Capture the part after "@/fancy/{components|examples}/"
+  // Looks for lines like: dynamic(() => import("@/imooui/components/..."))
+  // Capture the part after "@/imooui/{components|examples}/"
   const dynamicImportRegex =
-    /dynamic\(\s*\(\)\s*=>\s*import\(\s*['"]@\/fancy\/(components|examples)\/([^'"]+)['"]\s*\)/g
+    /dynamic\(\s*\(\)\s*=>\s*import\(\s*['"]@\/imooui\/(components|examples)\/([^'"]+)['"]\s*\)/g
   const dynComponents: string[] = []
   let match
 
@@ -132,7 +132,7 @@ function findDynamicComponentImports(sourceCode: string): string[] {
       .replace(/([A-Z])/g, "-$1")
       .toLowerCase()
       .replace(/^-/, "")
-    dynComponents.push(`fancy/${componentName}`)
+    dynComponents.push(`imooui/${componentName}`)
   }
 
   return dynComponents
@@ -221,8 +221,8 @@ function generateRegistryItem(
     type === "hook"
       ? "@/hooks/"
       : type === "example"
-        ? "@/fancy/examples/"
-        : "@/fancy/components/"
+        ? "@/imooui/examples/"
+        : "@/imooui/components/"
   const importPath = `${basePath}${relativePath}`.replace(/\\/g, "/")
   const importPathWithoutExt = importPath.replace(/\.tsx?$/, "")
 
@@ -253,7 +253,7 @@ function generateRegistryItem(
       case "example":
         return `examples/${pathWithoutExt}`
       case "ui":
-        return `fancy/${pathWithoutExt}`
+        return `imooui/${pathWithoutExt}`
       case "util":
         return `utils/${pathWithoutExt}`
     }
@@ -414,18 +414,18 @@ function traverseDirectory(
 }
 
 // Generate both registries
-const fancy = traverseDirectory(componentsDir, "ui")
+const imooui = traverseDirectory(componentsDir, "ui")
 const example = traverseDirectory(examplesDir, "example")
 const hooks = traverseDirectory(hooksDir, "hook")
 const utils = traverseDirectory(utilsDir, "util")
 
 // Generate the final index.ts content
 const content = `import * as React from "react";
-import { Registry } from "@/fancy/schema";
+import { Registry } from "@/imooui/schema";
 
 // This file is generated automatically. Do not edit it manually.
 
-const fancy: Registry = ${JSON.stringify(fancy, null, 2)};
+const imooui: Registry = ${JSON.stringify(imooui, null, 2)};
 
 const example: Registry = ${JSON.stringify(example, null, 2)};
 
@@ -434,7 +434,7 @@ const hooks: Registry = ${JSON.stringify(hooks, null, 2)};
 const utils: Registry = ${JSON.stringify(utils, null, 2)};
 
 export const registry = {
-  ...fancy,
+  ...imooui,
   ...example,
   ...hooks,
   ...utils,
@@ -470,7 +470,7 @@ function createCleanRegistry(registry: any) {
 
 // Generate and write the index.json file
 const cleanRegistry = {
-  ...createCleanRegistry(fancy),
+  ...createCleanRegistry(imooui),
   ...createCleanRegistry(example),
   ...createCleanRegistry(hooks),
   ...createCleanRegistry(utils),

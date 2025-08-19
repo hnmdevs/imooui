@@ -1,10 +1,10 @@
-# Fancy Components
+# imooui
 
-A growing library of fancy, fun, animated react components & microinteractions to make the web fun again. Free & Open Source.
+A growing library of interactive, fun, animated react components & microinteractions to make the web fun again. Free & Open Source.
 
 ## Documentation
 
-Visit https://fancycomponents.dev/docs/introduction to view the documentation.
+Visit https://imooui.imoogleai.xyz/docs/introduction to view the documentation.
 
 ## Contributing
 

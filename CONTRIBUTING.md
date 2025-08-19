@@ -2,7 +2,7 @@
 
 Hi! Nice to have you here! :)
 
-First of all, huge thanks for your interest in contributing to fancycomponents.dev!
+First of all, huge thanks for your interest in contributing to imooui.imoogleai.xyz!
 
 Please take a moment to review this document before submitting your first pull request. Please also check for open issues and pull requests to see if someone else is working on something similar.
 
@@ -94,18 +94,18 @@ If you think your component is a good fit, read on.
 4. If you're using new hooks, please add them to the `src/hooks` directory.
 5. If you're using new utilities, please add them to the `src/utils` directory, unless you want them in the same file as the component.
 6. When importing hooks and utilities, always use the `@/hooks` and `@/utils` path aliases (e.g. `import { useHook } from "@/hooks/use-hook"`). This is crucial because the registry build script looks for these specific import paths in the source code to determine which files and dependencies to include in the generated registry. Without the correct import paths, the CLI installation won't work properly.
-7. Please add yourself (or others if there are multiple ones) as the author in all files as a comment, in the following format: `// author: author_1 <https://x.com/author_1>, author_2 <https://x.com/author_2?`. Please refer to [this example](./src/fancy/components/blocks/stacking-cards.tsx) for reference.
+7. Please add yourself (or others if there are multiple ones) as the author in all files as a comment, in the following format: `// author: author_1 <https://x.com/author_1>, author_2 <https://x.com/author_2?`. Please refer to [this example](./src/imooui/components/blocks/stacking-cards.tsx) for reference.
 
 Some things cannot be fetched from the source file, such as: 
  - CSS variables, if applicable.
  - The component's dev dependencies (eg. types for matter-js), if applicable.
  - The component's additional dependencies, which aren't listed in the source file of the component, but are required for the component to work properly.
 
-Therefore, you need to add these config in a .json file with the same name as the component, next to the component .tsx file. The schema for this json is defined the [registry schema file](./src/fancy/schema.ts). Please, refer to [this example](./src/fancy/components/blocks/circling-elements.json) (additional css config) and [this example](./src/fancy/components/text/gravity.json) (additional dependencies) for reference.
+Therefore, you need to add these config in a .json file with the same name as the component, next to the component .tsx file. The schema for this json is defined the [registry schema file](./src/imooui/schema.ts). Please, refer to [this example](./src/imooui/components/blocks/circling-elements.json) (additional css config) and [this example](./src/imooui/components/text/gravity.json) (additional dependencies) for reference.
 
 ### 2. Component demo(s)
 
-1. Navigate to the `src/fancy/examples` directory.
+1. Navigate to the `src/imooui/examples` directory.
 2. In the same category folder as the component source, create a new file for the component demo. The file name should be the component name in kebab-case, ideally followed by `-demo`. If applicable, you can create multiple demos and examples, showing different use cases or variations of the component.
 
 ### 3. Generate source
@@ -131,7 +131,7 @@ author: johndoe <https://example.com>
 ```
 
 5. The first node after the header should be a `ComponentPreview` component, which will render the main demo of the component.
-6. Then, a header called `Installation`. There should be a `Tabs` component there, with two tabs: `CLI` and `Manual`. The `CLI` tab should contain the command to install the component with `npx shadcn@latest add "https://fancycomponents.dev/r/component-name.json"`. The `Manual` tab should contain the source code of the component referenced in a `ComponentSource` component.
+6. Then, a header called `Installation`. There should be a `Tabs` component there, with two tabs: `CLI` and `Manual`. The `CLI` tab should contain the command to install the component with `npx shadcn@latest add "https://imooui.imoogleai.xyz/r/component-name.json"`. The `Manual` tab should contain the source code of the component referenced in a `ComponentSource` component.
 7. If the component uses hooks, or need to add other dependencies, make sure to include them in that section, in a `ComponentSource` component.
 8. Add an `Usage` and/or `Understanding the component` section, if applicable.
 9. Add an `Examples` section, if applicable.
@@ -145,7 +145,7 @@ Please, have a look at an [existing component](./src/content/docs/components/blo
 
 In the `src/config/docs.ts` file, add a new item to the `docsConfig` array, at the correct category. Please make sure to add the `href`, and `New` as the `label`.
 
-When you're done and ready to submit your PR, please create a quick recording of your work, and upload it to the PR description. It will help us to speed up the review process. Check out [this PR](https://github.com/danielpetho/fancy/pull/2) for reference.
+When you're done and ready to submit your PR, please create a quick recording of your work, and upload it to the PR description. It will help us to speed up the review process. Check out [this PR](https://github.com/danielpetho/imooui/pull/2) for reference.
 
 That's it, you're done! If you feel stuck anywhere, please don't hesitate to ask for help.
 

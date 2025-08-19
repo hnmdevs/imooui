@@ -5,7 +5,7 @@ import Link from "next/link"
 import { motion } from "motion/react"
 
 import { cn } from "@/lib/utils"
-import Screensaver from "@/fancy/components/blocks/screensaver"
+import Screensaver from "@/imooui/components/blocks/screensaver"
 
 export default function NotFound() {
   const containerRef = useRef<HTMLDivElement>(null)

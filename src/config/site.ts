@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "Fancy Components",
-  url: "https://fancycomponents.dev",
-  ogImage: "https://fancycomponents.dev/og.jpg",
+  name: "imooui",
+  url: "https://imooui.imoogleai.xyz",
+  ogImage: "https://imooui.imoogleai.xyz/og.jpg",
   description:
-    "Ready to use, fancy React components to make the web fun again. Free & Open Source.",
+    "Ready to use, interactive React components to make the web fun again. Free & Open Source.",
   links: {
     twitter: "https://twitter.com/nonzeroexitcode",
-    github: "https://github.com/danielpetho/fancy",
+    github: "https://github.com/danielpetho/imooui",
   },
 }
 

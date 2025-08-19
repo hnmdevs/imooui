@@ -4,7 +4,7 @@ import Link from "next/link"
 import { LayoutGroup, motion } from "motion/react"
 
 import { Component } from "@/lib/get-components"
-import TextRotate from "@/fancy/components/text/text-rotate"
+import TextRotate from "@/imooui/components/text/text-rotate"
 
 import { HeroImages } from "./hero-images"
 
@@ -108,7 +108,7 @@ export function LandingHero({ allComps }: { allComps: Component[] | null }) {
               transition: { type: "spring", damping: 30, stiffness: 400 },
             }}
           >
-            <Link href="https://github.com/danielpetho/fancy">★ on GitHub</Link>
+            <Link href="https://github.com/danielpetho/imooui">★ on GitHub</Link>
           </motion.button>
         </div>
       </div>

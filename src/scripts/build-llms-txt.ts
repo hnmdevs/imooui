@@ -85,19 +85,19 @@ function generateLlmsTxt(categories: Record<string, DocFile[]>): string {
   let llmsTxt = ""
   
   // Header
-  llmsTxt += "# Fancy Components\n\n"
+  llmsTxt += "# imooui\n\n"
   
   // Description
   llmsTxt += "> A collection of fun and weird, ready-to-use components and microinteractions built with React, TypeScript, Tailwind CSS, and Motion (formerly Framer Motion).\n\n"
   
   // Overview
-  llmsTxt += "Fancy Components aims to inject playfulness into web UI by providing copy-and-paste-able components inspired by award-winning sites. All components are open source and free to use for personal or commercial projects.\n\n"
+  llmsTxt += "imooui aims to inject playfulness into web UI by providing copy-and-paste-able components inspired by award-winning sites. All components are open source and free to use for personal or commercial projects.\n\n"
   
   // Getting Started section
   if (categories["getting-started"]) {
     llmsTxt += "## Getting Started\n\n"
     categories["getting-started"].forEach(file => {
-      const url = `https://fancycomponents.dev/docs/${file.slug}.md`
+      const url = `https://imooui.imoogleai.xyz/docs/${file.slug}.md`
       llmsTxt += `- [${file.title}](${url})`
       if (file.description && file.description !== "null" && file.description.trim()) {
         llmsTxt += `: ${file.description}`
@@ -124,7 +124,7 @@ function generateLlmsTxt(categories: Record<string, DocFile[]>): string {
     llmsTxt += `## ${categoryName}\n\n`
     
     files.forEach(file => {
-      const url = `https://fancycomponents.dev/docs/${file.slug}.md`
+      const url = `https://imooui.imoogleai.xyz/docs/${file.slug}.md`
       llmsTxt += `- [${file.title}](${url})`
       if (file.description && file.description !== "null" && file.description.trim()) {
         llmsTxt += `: ${file.description}`
@@ -136,10 +136,10 @@ function generateLlmsTxt(categories: Record<string, DocFile[]>): string {
   
   // Additional Resources
   llmsTxt += "## Additional Resources\n\n"
-  llmsTxt += "- [GitHub Repository](https://github.com/danielpetho/fancy): Source code and contributions\n"
-  llmsTxt += "- [Interactive Documentation](https://fancycomponents.dev): Full documentation with live examples\n"
-  llmsTxt += "- [Installation Guide](https://fancycomponents.dev/docs/installation.md): Setup instructions\n"
-  llmsTxt += "- [Changelog](https://fancycomponents.dev/docs/changelog.md): Recent updates and new components\n\n"
+  llmsTxt += "- [GitHub Repository](https://github.com/danielpetho/imooui): Source code and contributions\n"
+  llmsTxt += "- [Interactive Documentation](https://imooui.imoogleai.xyz): Full documentation with live examples\n"
+  llmsTxt += "- [Installation Guide](https://imooui.imoogleai.xyz/docs/installation.md): Setup instructions\n"
+  llmsTxt += "- [Changelog](https://imooui.imoogleai.xyz/docs/changelog.md): Recent updates and new components\n\n"
   
   // Footer
   llmsTxt += "---\n\n"

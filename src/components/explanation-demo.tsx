@@ -3,7 +3,7 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
-import { registry } from "@/fancy/index"
+import { registry } from "@/imooui/index"
 
 interface ExplanationDemoProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string
