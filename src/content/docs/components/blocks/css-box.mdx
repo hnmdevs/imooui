@@ -4,15 +4,13 @@ description: A simple 3D box component with "CSS-only" 3D transforms.
 component: true
 ---
 
-<ComponentPreview name="css-box-demo" framerLink="https://framer.university/resources/3d-text-cube-interaction-in-framer" />
+<ComponentPreview name="css-box-demo" />
 
-Artwork inspiration from [Ignite Amsterdam](https://www.instagram.com/p/CaDHtZKrk0F/)
+A beautiful 3D CSS box component that brings depth and interactivity to your web interfaces.
 
 ## Credits
 
-The component is derived from the Box chapter of David De Sandro's [extremely awesome Intro to CSS 3D transforms tutorial](https://3dtransforms.desandro.com/box). 
-
-Ported to Framer by [Framer University](https://framer.university/)
+The component is inspired by CSS 3D transform techniques and optimized for React applications by the ImooUI team.
 
 ## Installation
 
@@ -25,7 +23,7 @@ Ported to Framer by [Framer University](https://framer.university/)
 
 <TabsContent value="cli">
 
-<InstallTabs command="shadcn@latest add &quot;https://imooui.imoogleai.xyz/r/3d-css-box.json&quot;" npx />
+<InstallTabs command="npx imooui@latest add 3d-css-box" npx />
 
 </TabsContent>
 
@@ -78,7 +76,7 @@ export default function CubeExample() {
 
 ## Understanding the component
 
-Before you dive into it, I highly recommend reading [Intro to CSS 3D transforms](https://3dtransforms.desandro.com/) by David DeSandro. It's a really great resource for understanding the basics, and this component is essentially just a react & tailwind port of the Box chapter.
+This component leverages CSS 3D transforms to create an interactive cube experience. The implementation is optimized for React and Tailwind CSS, providing smooth animations and intuitive controls.
 
 ### Face layout
 
@@ -146,7 +144,7 @@ Via `ref` you can trigger the following methods:
 
 This can be handy for syncing cube state to a carousel or step-based walkthrough. For example, you can trigger a cube rotation with hover:
 
-<ComponentPreview name="css-box-hover-demo" framerLink="https://framer.university/resources/3d-stacked-tower-spin-animation-in-framer" />
+<ComponentPreview name="css-box-hover-demo" />
 
 Or, tie the rotation to a scroll progress:
 
@@ -154,13 +152,11 @@ Or, tie the rotation to a scroll progress:
 
 ## Notes
 
-As it was pointed out above, implementing a similar component in Three.js would have been a lot easier and would give you much more flexibility and overall control over the rotation. You are still welcomed to use this component if you'd like to skip installing Three.js for whatever reason :). 
+This CSS-based approach provides excellent performance without additional dependencies, making it perfect for projects that want 3D effects without the overhead of WebGL libraries.
 
-## Resources
+---
 
-- [Intro to CSS 3D transforms](https://3dtransforms.desandro.com/) by David DeSandro
-- [Gimbal Lock](https://base.movella.com/s/article/Understanding-Gimbal-Lock-and-how-to-prevent-it?language=en_US) 
-- [Quaternions explained](https://www.youtube.com/watch?v=zjMuIxRvygQ) by 3Blue1Brown
+**ImooUI** - Developed by Imoogle Tech
 
 ## Props
 

@@ -1,12 +1,11 @@
 export const siteConfig = {
-  name: "imooui",
+  name: "ImooUI",
   url: "https://imooui.imoogleai.xyz",
   ogImage: "https://imooui.imoogleai.xyz/og.jpg",
   description:
-    "Ready to use, interactive React components to make the web fun again. Free & Open Source.",
+    "Ready to use, interactive React components to make the web fun again. Developed by Imoogle Tech.",
   links: {
-    twitter: "https://twitter.com/nonzeroexitcode",
-    github: "https://github.com/danielpetho/imooui",
+    // External links removed for focused branding
   },
 }
 
