@@ -55,7 +55,6 @@ imooui aims to inject playfulness into web UI by providing copy-and-paste-able c
 
 ## Additional Resources
 
-- [GitHub Repository](https://github.com/danielpetho/imooui): Source code and contributions
 - [Interactive Documentation](https://imooui.imoogleai.xyz): Full documentation with live examples
 - [Installation Guide](https://imooui.imoogleai.xyz/docs/installation.md): Setup instructions
 - [Changelog](https://imooui.imoogleai.xyz/docs/changelog.md): Recent updates and new components

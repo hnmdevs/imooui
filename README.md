@@ -1,6 +1,6 @@
 # imooui
 
-A growing library of interactive, fun, animated react components & microinteractions to make the web fun again. Free & Open Source.
+A growing library of interactive, fun, animated react components & microinteractions to make the web fun again. Developed by imoogle tech.
 
 ## Documentation
 

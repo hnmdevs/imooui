@@ -145,7 +145,6 @@ Please, have a look at an [existing component](./src/content/docs/components/blo
 
 In the `src/config/docs.ts` file, add a new item to the `docsConfig` array, at the correct category. Please make sure to add the `href`, and `New` as the `label`.
 
-When you're done and ready to submit your PR, please create a quick recording of your work, and upload it to the PR description. It will help us to speed up the review process. Check out [this PR](https://github.com/danielpetho/imooui/pull/2) for reference.
 
 That's it, you're done! If you feel stuck anywhere, please don't hesitate to ask for help.
 

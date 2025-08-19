@@ -108,7 +108,7 @@ export function LandingHero({ allComps }: { allComps: Component[] | null }) {
               transition: { type: "spring", damping: 30, stiffness: 400 },
             }}
           >
-            <Link href="https://github.com/danielpetho/imooui">★ on GitHub</Link>
+            <Link href="https://github.com/danielpetho/imooui">Developed by imoogle tech</Link>
           </motion.button>
         </div>
       </div>

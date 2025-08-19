@@ -136,7 +136,6 @@ function generateLlmsTxt(categories: Record<string, DocFile[]>): string {
   
   // Additional Resources
   llmsTxt += "## Additional Resources\n\n"
-  llmsTxt += "- [GitHub Repository](https://github.com/danielpetho/imooui): Source code and contributions\n"
   llmsTxt += "- [Interactive Documentation](https://imooui.imoogleai.xyz): Full documentation with live examples\n"
   llmsTxt += "- [Installation Guide](https://imooui.imoogleai.xyz/docs/installation.md): Setup instructions\n"
   llmsTxt += "- [Changelog](https://imooui.imoogleai.xyz/docs/changelog.md): Recent updates and new components\n\n"

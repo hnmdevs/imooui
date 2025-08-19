@@ -41,23 +41,7 @@ export function MainNav() {
         <div className="hidden sm:block">
           <Search />
         </div>
-        <a
-          href="https://github.com/danielpetho/imooui"
-          className="block lg:hidden"
-        >
-          <Icons.gitHub className="w-[18px] h-[18px]" />
-        </a>
-        <a
-          href="https://github.com/danielpetho/imooui"
-          className="hidden lg:block"
-        >
-          <span
-            className={`inline-flex font-normal border-box after:content-[attr(data-text)] after:font-black after:pointer-none after:overflow-hidden after:select-none after:invisible after:h-0 duration-300 transition-all hover:font-semibold flex-col text-right ease-out`}
-            data-text="Github"
-          >
-            Github
-          </span>
-        </a>
+
         <ThemeSwitcher />
       </div>
     </nav>
