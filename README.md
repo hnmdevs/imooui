@@ -1,6 +1,6 @@
-# imooui
+# ImooUI
 
-A growing library of interactive, fun, animated react components & microinteractions to make the web fun again. Free & Open Source.
+A growing library of interactive, fun, animated React components & microinteractions to make the web fun again. Developed by Imoogle Tech.
 
 ## Documentation
 
@@ -10,16 +10,11 @@ Visit https://imooui.imoogleai.xyz/docs/introduction to view the documentation.
 
 Please read the [contribution guidelines](./CONTRIBUTING.md).
 
-## Acknowledgments
-
-Huge thanks to [shadcn](https://github.com/shadcn-ui/ui), as many parts of this repository—documentation page, structure, registry system, guides, and many more—is built upon it.
-
 ## License
 
 Licensed under the [MIT license](LICENSE).
 
-<br/>
-<a href="https://vercel.com/oss">
-    <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge.svg" />
-</a>
+---
+
+**Developed by Imoogle Tech** - Making the web fun again with innovative UI components.
 
