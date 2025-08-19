@@ -137,7 +137,7 @@ const Card = ({ card, index }: { card: CardProps; index: number }) => {
   )
 }
 
-export default function FancyNumberTickerDemo() {
+export default function ImooUINumberTickerDemo() {
   return (
     <div className="w-full h-full font-azeret-mono bg-white">
       <div className="grid grid-cols-3 grid-rows-2 h-full">

@@ -65,7 +65,7 @@ export default function Preview() {
             className="w-full md:w-2/3 sm:text-left text-base sm:text-xl md:text-2xl"
             custom={1}
           >
-            Ready to use, fancy, animated React components & microinteractions
+            Ready to use, interactive, animated React components & microinteractions
             for creative developers.
           </motion.p>
         </div>

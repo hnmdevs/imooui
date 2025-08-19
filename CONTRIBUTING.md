@@ -94,18 +94,18 @@ If you think your component is a good fit, read on.
 4. If you're using new hooks, please add them to the `src/hooks` directory.
 5. If you're using new utilities, please add them to the `src/utils` directory, unless you want them in the same file as the component.
 6. When importing hooks and utilities, always use the `@/hooks` and `@/utils` path aliases (e.g. `import { useHook } from "@/hooks/use-hook"`). This is crucial because the registry build script looks for these specific import paths in the source code to determine which files and dependencies to include in the generated registry. Without the correct import paths, the CLI installation won't work properly.
-7. Please add yourself (or others if there are multiple ones) as the author in all files as a comment, in the following format: `// author: author_1 <https://x.com/author_1>, author_2 <https://x.com/author_2?`. Please refer to [this example](./src/fancy/components/blocks/stacking-cards.tsx) for reference.
+7. Please add yourself (or others if there are multiple ones) as the author in all files as a comment, in the following format: `// author: author_1 <https://x.com/author_1>, author_2 <https://x.com/author_2?`. Please refer to [this example](./src/imooui/components/blocks/stacking-cards.tsx) for reference.
 
 Some things cannot be fetched from the source file, such as: 
  - CSS variables, if applicable.
  - The component's dev dependencies (eg. types for matter-js), if applicable.
  - The component's additional dependencies, which aren't listed in the source file of the component, but are required for the component to work properly.
 
-Therefore, you need to add these config in a .json file with the same name as the component, next to the component .tsx file. The schema for this json is defined the [registry schema file](./src/fancy/schema.ts). Please, refer to [this example](./src/fancy/components/blocks/circling-elements.json) (additional css config) and [this example](./src/fancy/components/text/gravity.json) (additional dependencies) for reference.
+Therefore, you need to add these config in a .json file with the same name as the component, next to the component .tsx file. The schema for this json is defined the [registry schema file](./src/imooui/schema.ts). Please, refer to [this example](./src/imooui/components/blocks/circling-elements.json) (additional css config) and [this example](./src/imooui/components/text/gravity.json) (additional dependencies) for reference.
 
 ### 2. Component demo(s)
 
-1. Navigate to the `src/fancy/examples` directory.
+1. Navigate to the `src/imooui/examples` directory.
 2. In the same category folder as the component source, create a new file for the component demo. The file name should be the component name in kebab-case, ideally followed by `-demo`. If applicable, you can create multiple demos and examples, showing different use cases or variations of the component.
 
 ### 3. Generate source

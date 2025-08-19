@@ -82,7 +82,7 @@ function findHookImports(sourceCode: string): string[] {
 function findComponentImports(sourceCode: string): string[] {
   // Match static imports from @/imooui/components/ or @/imooui/examples/
   const componentImportRegex =
-    /import\s+([^'"]+?)\s+from\s+['"]@\/fancy\/(components|examples)\/([^'"]+)['"]/g
+    /import\s+([^'"]+?)\s+from\s+['"]@\/imooui\/(components|examples)\/([^'"]+)['"]/g
   const components: string[] = []
   let match
 
@@ -121,7 +121,7 @@ function findDynamicComponentImports(sourceCode: string): string[] {
   // Looks for lines like: dynamic(() => import("@/imooui/components/..."))
   // Capture the part after "@/imooui/{components|examples}/"
   const dynamicImportRegex =
-    /dynamic\(\s*\(\)\s*=>\s*import\(\s*['"]@\/fancy\/(components|examples)\/([^'"]+)['"]\s*\)/g
+    /dynamic\(\s*\(\)\s*=>\s*import\(\s*['"]@\/imooui\/(components|examples)\/([^'"]+)['"]\s*\)/g
   const dynComponents: string[] = []
   let match
 
@@ -425,7 +425,7 @@ import { Registry } from "@/imooui/schema";
 
 // This file is generated automatically. Do not edit it manually.
 
-const imooui: Registry = ${JSON.stringify(fancy, null, 2)};
+const imooui: Registry = ${JSON.stringify(imooui, null, 2)};
 
 const example: Registry = ${JSON.stringify(example, null, 2)};
 
@@ -470,7 +470,7 @@ function createCleanRegistry(registry: any) {
 
 // Generate and write the index.json file
 const cleanRegistry = {
-  ...createCleanRegistry(fancy),
+  ...createCleanRegistry(imooui),
   ...createCleanRegistry(example),
   ...createCleanRegistry(hooks),
   ...createCleanRegistry(utils),

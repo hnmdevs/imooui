@@ -112,7 +112,7 @@ function processItemFiles(registryItem: any): any[] {
       sourceFilePath = path.join(
         baseDir,
         "src",
-        "fancy",
+        "imooui",
         "components",
         `${componentPath}.tsx`
       )
@@ -121,7 +121,7 @@ function processItemFiles(registryItem: any): any[] {
       sourceFilePath = path.join(
         baseDir,
         "src",
-        "fancy",
+        "imooui",
         "examples",
         `${examplePath}.tsx`
       )

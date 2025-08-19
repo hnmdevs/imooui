@@ -19,7 +19,7 @@ export default function Preview() {
           <TextRotate
             texts={[
               "work!",
-              "fancy ✽",
+              "imooui ✽",
               "right",
               "fast",
               "fun",

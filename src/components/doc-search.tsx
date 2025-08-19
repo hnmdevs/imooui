@@ -5,7 +5,7 @@ export function Search() {
   return (
     <DocSearch
       appId="2X8YUQBTLC"
-      indexName="fancycomponents"
+      indexName="imooui"
       apiKey="6f798ebaa6226dd06e44bd898b32893f"
       placeholder="Search documentation..."
       disableUserPersonalization

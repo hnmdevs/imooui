@@ -17,7 +17,7 @@ const PixelTrailDemo: React.FC = () => {
 
       <div className="justify-center items-center flex flex-col w-full h-full z-10 pointer-events-none space-y-2 md:space-y-4">
         <h2 className="text-xl cursor-pointer sm:text-3xl md:text-5xl tracking-tight">
-          fancy ✽ components{" "}
+          imooui ✽{" "}
         </h2>
         <p className="text-xs md:text-lg font-overused-grotesk">
           with react, motion, and typrscript.

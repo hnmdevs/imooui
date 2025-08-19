@@ -21,7 +21,7 @@ const path = generateSpiralPath(4)
 export default function MarqueeAlongSvgPathDemo() {
   return (
     <div className="w-full h-full bg-zinc-50 flex items-center justify-center">
-      <h2 className="text-black text-6xl sm:text-8xl z-10">fancy</h2>
+      <h2 className="text-black text-6xl sm:text-8xl z-10">imooui</h2>
       <MarqueeAlongSvgPath
         path={path}
         viewBox="0 0 400 474" // Adjusted to center the spiral

@@ -27,7 +27,7 @@ const Preview = () => {
         transition={{ duration: 0.88, delay: 1.5 }}
       >
         <p className="text-5xl md:text-7xl z-50 text-white font-calendas italic">
-          fancy.
+          imooui.
         </p>
         <p className="text-xs z-50 hover:scale-110 transition-transform bg-white text-black rounded-full py-2 w-20 cursor-pointer">
           Download

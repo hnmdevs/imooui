@@ -1,8 +1,8 @@
-# Acceptance Criteria for Fancy Components
+# Acceptance Criteria for imooui
 
 Hey there! Before you start working on a new component, please review these guidelines carefully.
 
-There are many excellent component libraries available on GitHub (such as https://github.com/magicuidesign/magic-ui) which might worth checking and contributing to. Fancy Components aims to take a different approach by creating and collecting more unconventional components and microinteractions that prioritize creativity and experimentation over pure utility. Browse through the catalog to get an idea of what we're aiming for. If you're unsure whether your component idea aligns with this direction, feel free to reach out for discussion.
+There are many excellent component libraries available on GitHub (such as https://github.com/magicuidesign/magic-ui) which might worth checking and contributing to. imooui aims to take a different approach by creating and collecting more unconventional components and microinteractions that prioritize creativity and experimentation over pure utility. Browse through the catalog to get an idea of what we're aiming for. If you're unsure whether your component idea aligns with this direction, feel free to reach out for discussion.
 
 ## Credits
 

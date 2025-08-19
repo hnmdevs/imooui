@@ -25,7 +25,7 @@ export default function Preview() {
           }}
           containerRef={containerRef}
         >
-          fancy!
+          imooui!
         </VariableFontAndCursor>
       </div>
 
