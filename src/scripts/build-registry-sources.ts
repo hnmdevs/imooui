@@ -108,7 +108,7 @@ function processItemFiles(registryItem: any): any[] {
       const hookPath = file.path.replace("hooks/", "")
       sourceFilePath = path.join(baseDir, "src", "hooks", `${hookPath}.ts`)
     } else if (file.type === "registry:ui") {
-      const componentPath = file.path.replace("fancy/", "")
+      const componentPath = file.path.replace("imooui/", "")
       sourceFilePath = path.join(
         baseDir,
         "src",
@@ -148,16 +148,16 @@ function processItemFiles(registryItem: any): any[] {
     if (file.type === "registry:hook") {
       targetPath = `hooks/${fileName}.ts`
     } else if (file.type === "registry:ui") {
-      const category = getCategory(file.path.replace("fancy/", ""))
+      const category = getCategory(file.path.replace("imooui/", ""))
       targetPath = category
-        ? `components/fancy/${category}/${fileName}.tsx`
-        : `components/fancy/${fileName}.tsx`
+        ? `components/imooui/${category}/${fileName}.tsx`
+        : `components/imooui/${fileName}.tsx`
     } else if (file.type === "registry:block") {
       const examplePath = file.path.replace("examples/", "")
       const category = getCategory(examplePath)
       targetPath = category
-        ? `components/fancy/${category}/${fileName}.tsx`
-        : `components/fancy/${fileName}.tsx`
+        ? `components/imooui/${category}/${fileName}.tsx`
+        : `components/imooui/${fileName}.tsx`
     } else if (file.type === "registry:lib") {
       const utilPath = file.path.replace("utils/", "")
       const category = getCategory(utilPath)
@@ -209,7 +209,7 @@ function gatherAllDependencyFiles(
   // 2) Recursively gather sub-dependencies (registryDependencies)
   if (item.registryDependencies) {
     item.registryDependencies.forEach((depUrl: string) => {
-      // depUrl is e.g. 'https://fancycomponents.dev/r/gravity.json'
+      // depUrl is e.g. 'https://imooui.imoogleai.xyz/r/gravity.json'
       // we want just "gravity"
       const depName = depUrl.split("/").pop()?.replace(".json", "")
       if (depName && registry[depName]) {
@@ -271,7 +271,7 @@ function processRegistryItem(name: string, item: any): any {
        // Don't add self as dependency
        const fileName = dep.split("/").pop()
        if (fileName !== name) {
-         registryDeps.add(`https://fancycomponents.dev/r/${fileName}.json`)
+         registryDeps.add(`https://imooui.imoogleai.xyz/r/${fileName}.json`)
        }
      })
    }
@@ -281,7 +281,7 @@ function processRegistryItem(name: string, item: any): any {
     if (f.type === "registry:hook" || f.type === "registry:lib") {
       const fileName = f.path.split("/").pop()
       if (fileName !== name) {
-        registryDeps.add(`https://fancycomponents.dev/r/${fileName}.json`)
+        registryDeps.add(`https://imooui.imoogleai.xyz/r/${fileName}.json`)
       }
     }
   })
@@ -311,7 +311,7 @@ function processRegistryItem(name: string, item: any): any {
       const possibleName = importPath.split("/").pop() || ""
       const registry = JSON.parse(fs.readFileSync(registryJsonPath, "utf-8"))
       if (registry[possibleName] && possibleName !== name) {
-        registryDeps.add(`https://fancycomponents.dev/r/${possibleName}.json`)
+        registryDeps.add(`https://imooui.imoogleai.xyz/r/${possibleName}.json`)
       }
     })
   })
@@ -326,7 +326,7 @@ function processRegistryItem(name: string, item: any): any {
   //     ) {
   //       const depName = importPath.split("/").pop()
   //       if (depName && registry[depName]) {
-  //         registryDeps.add(`https://fancycomponents.dev/r/${depName}.json`)
+  //         registryDeps.add(`https://imooui.imoogleai.xyz/r/${depName}.json`)
   //       }
   //     }
   //   })

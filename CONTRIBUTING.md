@@ -2,7 +2,7 @@
 
 Hi! Nice to have you here! :)
 
-First of all, huge thanks for your interest in contributing to fancycomponents.dev!
+First of all, huge thanks for your interest in contributing to imooui.imoogleai.xyz!
 
 Please take a moment to review this document before submitting your first pull request. Please also check for open issues and pull requests to see if someone else is working on something similar.
 
@@ -131,7 +131,7 @@ author: johndoe <https://example.com>
 ```
 
 5. The first node after the header should be a `ComponentPreview` component, which will render the main demo of the component.
-6. Then, a header called `Installation`. There should be a `Tabs` component there, with two tabs: `CLI` and `Manual`. The `CLI` tab should contain the command to install the component with `npx shadcn@latest add "https://fancycomponents.dev/r/component-name.json"`. The `Manual` tab should contain the source code of the component referenced in a `ComponentSource` component.
+6. Then, a header called `Installation`. There should be a `Tabs` component there, with two tabs: `CLI` and `Manual`. The `CLI` tab should contain the command to install the component with `npx shadcn@latest add "https://imooui.imoogleai.xyz/r/component-name.json"`. The `Manual` tab should contain the source code of the component referenced in a `ComponentSource` component.
 7. If the component uses hooks, or need to add other dependencies, make sure to include them in that section, in a `ComponentSource` component.
 8. Add an `Usage` and/or `Understanding the component` section, if applicable.
 9. Add an `Examples` section, if applicable.
@@ -145,7 +145,7 @@ Please, have a look at an [existing component](./src/content/docs/components/blo
 
 In the `src/config/docs.ts` file, add a new item to the `docsConfig` array, at the correct category. Please make sure to add the `href`, and `New` as the `label`.
 
-When you're done and ready to submit your PR, please create a quick recording of your work, and upload it to the PR description. It will help us to speed up the review process. Check out [this PR](https://github.com/danielpetho/fancy/pull/2) for reference.
+When you're done and ready to submit your PR, please create a quick recording of your work, and upload it to the PR description. It will help us to speed up the review process. Check out [this PR](https://github.com/danielpetho/imooui/pull/2) for reference.
 
 That's it, you're done! If you feel stuck anywhere, please don't hesitate to ask for help.
 

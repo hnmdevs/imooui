@@ -42,13 +42,13 @@ export function MainNav() {
           <Search />
         </div>
         <a
-          href="https://github.com/danielpetho/fancy"
+          href="https://github.com/danielpetho/imooui"
           className="block lg:hidden"
         >
           <Icons.gitHub className="w-[18px] h-[18px]" />
         </a>
         <a
-          href="https://github.com/danielpetho/fancy"
+          href="https://github.com/danielpetho/imooui"
           className="hidden lg:block"
         >
           <span

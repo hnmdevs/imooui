@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Component } from "@/lib/get-components"
 import Floating, {
   FloatingElement,
-} from "@/fancy/components/image/parallax-floating"
+} from "@/imooui/components/image/parallax-floating"
 
 import HoverVideo from "./hover-video"
 
